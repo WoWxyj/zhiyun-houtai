@@ -1,0 +1,1260 @@
+.loanAll {
+  background: #fff !important;
+}
+
+.eduPosFix {
+  position: fixed;
+  z-index: 999999;
+  width: 176px;
+  height: 133px;
+  bottom: 190px;
+  right: 180px;
+  img {
+    width: 100%;
+    animation: eduPos 1.2s infinite;
+  }
+  @keyframes eduPos {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+.loanTop {
+  margin-top: 88px;
+}
+
+.infiniteScl {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+// 统一头
+.loanTopTitle {
+  width: 100%;
+  min-width: 320px;
+  max-width: 750px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 999;
+  height: 88px;
+  line-height: 88px;
+  text-align: center;
+  color: #fff;
+  font-size: 34px;
+  background: url(../../assets/changeImg/nav-top-icon-bg.png) no-repeat;
+  background-size: 100%;
+  .rightSpan {
+    position: absolute;
+    right: 24px;
+    line-height: 28px;
+    font-size: 28px;
+    top: 34px;
+    background: url(../../assets/img/jing-zhun-tuijian-icon.png) no-repeat left 2px;
+    background-size: 20%;
+    padding-left: 40px;
+  }
+  .loanTopTitleLeft {
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    background: none;
+    img {
+      width: 20px;
+      height: 36px;
+    }
+  }
+}
+
+.loanCont {
+  position: relative;
+  height: 100%;
+  background: #fff;
+  .loanContType {
+    position: fixed;
+    background: #fff;
+    z-index: 999;
+    top: 88px;
+    left: 0;
+    right: 0;
+    min-width: 280px;
+    max-width: 700px;
+    padding: 20px 25px 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    li {
+      width: 20%;
+      height: 58px;
+      line-height: 50px;
+      text-align: center;
+      background: url(../../assets/img/loan-top-bg-icon.png) no-repeat;
+      background-size: 100%;
+      font-size: 24px;
+      color: #333;
+    }
+    .active {
+      color: $font-color;
+    }
+  }
+  .loanContNote {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    background: #FFF7EA;
+    font-size: 24px;
+    color: #FF9F39;
+    position: fixed;
+    top:174px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 750px;
+    margin: 0 auto;
+    z-index: 999;
+    i {
+      width: 22px;
+      height: 22px;
+      display: inline-block;
+      background: url(../../assets/img/loan-note-icon.png) no-repeat;
+      background-size: 100%;
+      margin-right: 10px;
+    }
+    img {
+      width: 16px;
+      height: 16px;
+      float: right;
+      padding: 16px 30px 16px 0;
+    }
+  }
+}
+
+.loanBot {
+  margin-top: 140px;
+}
+
+.loanbrowsing{
+  padding: 260px 0 50px;
+}
+
+
+// 贷款大全列表样式
+.loanContDiv {
+  //padding-top: 20px;
+  background: #fff;
+  //padding-bottom: 110px;
+  margin-bottom: 130px;
+  li {
+    width: 732px;
+    height: 216px;
+    margin: 0 auto;
+    background: url(../../assets/img/loan-all-produ-bg.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    .loanposiLabel {
+      position: absolute;
+      width: 188px;
+      height: 148px;
+      transform: rotate(20deg);
+      top: 20px;
+      right: 204px;
+      img {
+        width: 100%;
+      }
+      .loanIconSpan {
+        position: absolute;
+        font-size: 16px;
+        top: 62px;
+        color: #fff;
+        left: 18px;
+      }
+    }
+    .loanContDivTop {
+      height: 130px;
+      width: 702px;
+      margin: 0 auto;
+      padding-top: 4px;
+      border-bottom: 1px #E5E5E5 solid;
+      &:after {
+        display: block;
+        content: '';
+        clear: both;
+      }
+      .loanContDivTopImg {
+        float: left;
+        width: 74px;
+        height: 74px;
+        overflow: hidden;
+        padding-left: 15px;
+        padding-top: 20px;
+        img {
+          width: 100%;
+        }
+      }
+      .loanContDivTopTitlt {
+        float: left;
+        padding-left: 21px;
+        h3 {
+          font-size: 26px;
+          color: #444;
+          line-height: 40px;
+          padding-top: 10px;
+        }
+        p {
+          font-size: 22px;
+          color: #999;
+          padding-top: 8px;
+          span {
+            font-size: #F9565A;
+          }
+        }
+      }
+      .loanContDivTopapply {
+        float: right;
+        padding: 20px 20px 0 0;
+        text-align: center;
+        span {
+          display: block;
+          font-size: 22px;
+          color: #999;
+        }
+        .loanContApply {
+          width: 170px;
+          height: 80px;
+          line-height: 70px;
+          text-align: center;
+          background: url(../../assets/changeImg/loan-button-spply-icon.png) no-repeat;
+          background-size: 100%;
+          font-size: 26px;
+          color: #fff;
+        }
+      }
+    }
+    .loanContDivBottom {
+      width: 92%;
+      text-align: left;
+      line-height: 55px;
+      height: 55px;
+      overflow: hidden;
+      padding-left: 30px;
+      color: #666;
+    }
+  }
+}
+
+.markAll {
+  position: relative;
+}
+
+.mark {
+  position: fixed;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.5);
+  min-width: 320px;
+  max-width: 750px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.markDiv {
+  position: fixed;
+  z-index: 9999 !important;
+  background: #fff;
+  width: 8.933333rem;
+  height: 100%;
+  top: 0;
+  right: 0;
+  margin: 0 auto;
+  left: 1.066667rem;
+  padding-top: 1.333333rem;
+  .markDivUl {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 40px 40px;
+    h3 {
+      font-size: 30px;
+      color: #666666;
+      padding-bottom: 30px;
+      width: 100%;
+    }
+    li {
+      width: 186px;
+      text-align: center;
+      line-height: 58px;
+      background: #F4F4F4;
+      font-size: 24px;
+      color: #666666;
+      margin: 0 16px 20px 0;
+      &:first-child {
+        background: url(../../assets/changeImg/loan_li_icon_bg.png) no-repeat;
+        background-size: 100%;
+      }
+    }
+    .active {
+      /* background: #eee; */
+      color: #fff;
+      background: url(../../assets/changeImg/loan_li_icon_bg.png) no-repeat;
+      background-size: 100%;
+    }
+  }
+  .buttom-btn {
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    z-index: 999999;
+    width: 100%;
+    border-top: 1px #E5E5E5 solid;
+    li {
+      width: 50%;
+      background: #fff;
+      height: 90px;
+      line-height: 90px;
+      text-align: center;
+      font-size: 34px;
+      color: #333;
+    }
+    .loanSure {
+      background: $font-color;
+      color: #fff;
+    }
+  }
+}
+
+
+// 精准推荐
+.accurateRecom {
+  width: 100%;
+  .accurateRecomBan {
+    width: 100%;
+    margin-top: 88px;
+  }
+  .accuratPhoneYzm {
+    background: #fff;
+    .accuratYzm {
+      .accuratYzm-input {
+        float: left;
+      }
+      .accuratYzm-input-btn {
+        float: right;
+        width: 160px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: #F9565A;
+        font-size: 24px;
+        border: 1px solid rgba(249, 86, 90, 1);
+        border-radius: 4px;
+        margin-top: 20px;
+      }
+    }
+  }
+  .select-money-time {
+    width: 100%;
+    background: #fff;
+    display: flex;
+    margin: 12px 0;
+    li {
+      text-align: center;
+      font-size: 26px;
+      color: #666;
+      padding-bottom: 26px;
+      padding: 34px 0;
+      width: 50%;
+      border-left: 1px #E5E5E5 solid;
+      &:first-child {
+        border-left: none;
+      }
+      select {
+        font-size: 36px;
+        color: #FF5B5B;
+        padding-top: 20px;
+        font-weight: bold;
+        option {
+          font-size: 10px;
+        }
+      }
+      span {
+        display: inline-block;
+        img {
+          width: 16px;
+          height: 26px;
+          padding-top: 4px;
+        }
+      }
+    }
+  }
+}
+
+.accurat-checkbox {
+  height: 100px;
+  line-height: 100px;
+  margin-top: 12px;
+  padding: 0 24px;
+  font-size: 24px;
+  span {
+    color: #333;
+    strong {
+      color: #FF5B5B;
+      font-weight: normal;
+    }
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  #myCheck + label {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background: url(../../assets/img/checkbox-no-icon.png) no-repeat;
+    background-size: 100%;
+    margin-top: 8px;
+    margin-right: 4px;
+  }
+  #myCheck:checked + label {
+    background: url(../../assets/img/checkbox-yes-icon.png) no-repeat;
+    background-size: 100%;
+  }
+}
+
+.white-checkbox {
+  background: #fff;
+}
+
+.accurat-position {
+  width: 100%;
+  min-width: 4.266667rem;
+  max-width: 10rem;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  p {
+    height: 50px;
+    line-height: 50px;
+    background: #FFF7EA;
+    text-align: center;
+    color: #FF9F39;
+    font-size: 20px;
+  }
+  .accurat-btn {
+    height: 98px;
+    line-height: 98px;
+    background: url(../../assets/changeImg/apply-right-now.png) no-repeat;
+    background-size: 100%;
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+  }
+}
+
+.big-small-show,
+.accurat-redio {
+  li {
+    height: 94px;
+    padding: 0 24px;
+    color: #666666;
+    font-size: 28px;
+    position: relative;
+    border-bottom: 1px #E5E5E5 solid;
+    .accurat-redio-right {
+      // float: right;
+      position: absolute;
+      right: 20px;
+      top: 0;
+      height: 94px;
+      line-height: 94px;
+      padding-right: 6px;
+      label {
+        &:last-child {
+          padding-left: 40px;
+        }
+        input[type="radio"] {
+          appearance: none;
+          -webkit-appearance: none;
+          outline: none;
+          margin: 0;
+        }
+        input[type="radio"]:after {
+          display: block;
+          content: "";
+          width: 28px;
+          height: 28px;
+          margin-right: 10px;
+          background: url(../../assets/img/check-no-icon.png) no-repeat;
+          background-size: 100%;
+        }
+        input[type="radio"]:checked:after {
+          background: url(../../assets/img/check-yes-icon.png) no-repeat;
+          background-size: 100%;
+        }
+      }
+    }
+  }
+}
+
+.accurat-redio {
+  margin: 12px 0;
+  background: #fff;
+  .normal-show {
+    line-height: 94px;
+  }
+}
+
+.accurat-redio {
+  background: #fff;
+  .big-small-show {
+    position: relative;
+    height: 94px;
+    .accurat-redio-div {
+      float: left;
+      padding-top: 12px;
+      span {
+        display: block;
+        font-size: 20px;
+        color: #FF5B5B;
+      }
+    }
+    .accurat-redio-right {
+      line-height: 94px;
+    }
+  }
+}
+
+.accuratPhone,
+.accuratYzm {
+  height: 94px;
+  line-height: 94px;
+  font-size: 28px;
+  padding: 0 24px;
+  .accuratPhone-input,
+  .accuratYzm-input {
+    height: 94px;
+    line-height: 94px;
+    color: #333;
+    font-size: 30px;
+    background: none;
+  }
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #999;
+    font-size: 28px;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #999;
+    font-size: 28px;
+  }
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #999;
+    font-size: 28px;
+  }
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: #999;
+    font-size: 28px;
+  }
+}
+
+.accuratPhone {
+  border-bottom: 1px #E5E5E5 solid;
+  font-size: 28px;
+  color: #666;
+  position: relative;
+  .accuratPhone-input {
+    float: right;
+    min-width: 200px;
+    text-align: right;
+  }
+}
+
+// 精准推荐页面2
+.recomTwo {
+  width: 100%;
+  background: linear-gradient(7deg, #91c7ff, #3160fe);
+  padding-bottom: 20px;
+  .chooseLoan {
+    width: 100%;
+    margin-top: 88px;
+  }
+  .recomTwoDiv {
+    width: 702px;
+    margin: -24px auto 0;
+    background: #fff;
+    position: relative;
+    .intentionMoney {
+      position: absolute;
+      top: -48px;
+      left: 36px;
+      width: 634px;
+      height: 248px;
+      background: url(../../assets/img/intentionMoney-icon-bg.png) no-repeat;
+      background-size: 100%;
+      text-align: center;
+      z-index: 999;
+      p {
+        font-size: 26px;
+        color: #999;
+        padding-top: 30px;
+      }
+      h3 {
+        font-size: 64px;
+        color: #333;
+        line-height: 110px;
+      }
+      span {
+        display: block;
+        color: #FF5B5B;
+        font-size: 24px;
+        line-height: 24px;
+        img {
+          width: 22px;
+          height: 22px;
+          margin: 4px 0 0 10px;
+        }
+      }
+    }
+    .fff {
+      background: #fff;
+      height: 172px;
+    }
+    .delivery {
+      background: #F3F3F3;
+      width: 100%;
+      position: relative;
+      p {
+        font-size: 28px;
+        color: #666;
+        padding: 36px 0 16px;
+        text-align: center;
+      }
+      img {
+        width: 666px;
+        height: 219px;
+      }
+      .deliveryNumber {
+        position: absolute;
+        top: 170px;
+        left: 180px;
+        color: #fff;
+      }
+    }
+    .recommendMore {
+      .recommendMoreTitle {
+        position: relative;
+        text-align: center;
+        margin-top: 24px;
+        font-size: 30px;
+        color: #333;
+        span {
+          display: block;
+          font-size: 22px;
+          color: #999;
+          padding-top: 20px;
+          font-weight: normal;
+        }
+        .applyListLeft,
+        .applyListRight {
+          position: absolute;
+          width: 137px;
+          height: 10px;
+          top: 24px;
+          img {
+            width: 100%;
+          }
+        }
+        .applyListLeft {
+          left: 65px;
+        }
+        .applyListRight {
+          right: 65px;
+        }
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+        li {
+          width: 274px;
+          height: 336px;
+          border: 1px solid #E5E5E5;
+          border-radius: 20px;
+          background: #FBFBFB;
+          text-align: center;
+          margin: 30px 0 0 50px;
+          position: relative;
+          img {
+            width: 82px;
+            height: 82px;
+            margin: 20px 0 10px;
+          }
+          h3 {
+            font-size: 24px;
+            color: #666;
+            margin-bottom: 16px;
+          }
+          span {
+            display: block;
+            font-size: 22px;
+            color: #666;
+          }
+          .borrowLines {
+            font-size: 30px;
+            color: #FF5B5B;
+            padding: 6px 0 12px;
+          }
+          .borrowPerson {
+            font-size: 20px;
+            color: #999;
+          }
+          .recommendApply {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 50px;
+            line-height: 50px;
+            background: url(../../assets/img/recommendApply-icon-btn-bg.png) no-repeat;
+            background-size: 100%;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 精准推荐页面3
+.accurateRecomText {
+  height: 94px;
+  line-height: 94px;
+  text-align: center;
+  background: #fff;
+  margin-bottom: 12px;
+  font-size: 24px;
+  color: #666;
+  span {
+    color: #333;
+    padding-right: 6px;
+  }
+  img {
+    width: 26px;
+    height: 24px;
+    margin: 34px 2px 0;
+  }
+}
+
+.salaryStyle,
+.applyStyle {
+  font-size: 28px;
+  color: #999;
+  height: 94px;
+  line-height: 94px;
+  background: #fff;
+  // margin-top: 12px;
+  padding: 0 24px;
+  span {
+    float: left;
+  }
+  ul {
+    float: left;
+    li {
+      float: left;
+      padding: 0 12px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      border: 1px #CCCCCC solid;
+      border-radius: 6px;
+      font-size: 20px;
+      color: #ccc;
+      margin: 22px 0 0 14px;
+    }
+    .active {
+      color: #e3927d;
+      border: 2px #e3927d solid;
+    }
+  }
+}
+
+.applyStyle {
+  border-top: 1px #f3f3f3 solid;
+}
+
+.applyStyle ul li {
+  margin: 22px 0 0 7px;
+}
+
+.accurateRecom .accuratThree-checkbox {
+  background: none !important;
+  height: 24px;
+  line-height: 24px;
+  margin-top: 28px;
+  padding: 0 24px;
+  margin-bottom: 30px;
+}
+
+.accurat-introduce {
+  font-size: 24px;
+  color: #666;
+  width: 694px;
+  margin: 10px auto;
+  line-height: 36px;
+}
+
+.cooperAgency {
+  text-align: center;
+  padding-bottom: 150px;
+  h3 {
+    position: relative;
+    font-size: 30px;
+    color: #A0A0A0;
+    margin-top: 40px;
+    .cooperAgencyintro {
+      display: block;
+      font-size: 22px;
+      color: #999;
+      font-weight: normal;
+      padding-top: 10px;
+    }
+    .cooperAgencyLeftLine,
+    .cooperAgencyRightLine {
+      width: 180px;
+      height: 1px;
+      background: #999999;
+      position: absolute;
+      top: 40px;
+    }
+    .cooperAgencyLeftLine {
+      left: 65px;
+    }
+    .cooperAgencyRightLine {
+      right: 65px;
+    }
+  }
+  img {
+    width: 411px;
+    height: 36px;
+    margin: 28px auto;
+  }
+}
+
+// 申请结果页面
+.applyResults {
+  background: #fff;
+  .applyAreadyOne,
+  .applyAreadyTwo {
+    position: absolute;
+  }
+  .applyAreadyOne {
+    width: 120px;
+    height: 130px;
+    top: 195px;
+    right: 0;
+  }
+  .applyAreadyTwo {
+    width: 116px;
+    height: 126px;
+    top: 488px;
+    left: 0;
+  }
+  width: 100%;
+  .applyAreadyIcon {
+    text-align: center;
+    margin-top: 88px;
+    img {
+      width: 360px;
+      height: 288px;
+      padding-top: 18px;
+    }
+    h3 {
+      font-size: 36px;
+      color: #333;
+      padding-top: 52px;
+    }
+  }
+  .applyResultsProcess {
+    display: flex;
+    padding: 58px 0 28px;
+    li {
+      width: 33.33%;
+      text-align: center;
+      background: url(../../assets/img/br_loan_step_left.png) no-repeat left 16px, url(../../assets/img/br_loan_step_right.png) no-repeat right 20px;
+      background-size: 32%;
+      span {
+        display: block;
+        padding-top: 16px;
+        color: #FF5B5B;
+        font-size: 28px;
+      }
+      img {
+        width: 56px;
+        height: 56px;
+      }
+    }
+    li:first-child {
+      background: url(../../assets/img/br_loan_step_right.png) no-repeat right 16px;
+      background-size: 32%;
+    }
+    li:last-child {
+      background: url(../../assets/img/br_loan_step_left.png) no-repeat left 20px;
+      background-size: 32%;
+    }
+  }
+  .applyResultsNotice {
+    text-align: center;
+    background: #F3F3F3;
+    height: 100px;
+    overflow: hidden;
+    padding: 22px 0;
+    p {
+      line-height: 48px;
+      color: #666666;
+      font-size: 22px;
+    }
+  }
+  .applyResultsRecomm {
+    padding-bottom: 30px;
+    h3 {
+      text-align: center;
+      position: relative;
+      font-size: 30px;
+      margin: 60px 0 30px;
+      color: #333;
+      .applyListLeft,
+      .applyListRight {
+        position: absolute;
+        width: 137px;
+        height: 10px;
+        top: 14px;
+        img {
+          width: 100%;
+        }
+      }
+      .applyListLeft {
+        left: 60px;
+      }
+      .applyListRight {
+        right: 60px;
+      }
+    }
+    ul {
+      li {
+        width: 640px;
+        height: 166px;
+        border: 2px solid #3B68FE;
+        border-radius: 10px;
+        margin: 0 auto 38px;
+        position: relative;
+        color: #999;
+        .applyNum {
+          position: absolute;
+          right: 20px;
+          top: 22px;
+          font-size: 20px;
+        }
+        .applyResultsLeft {
+          float: left;
+          width: 196px;
+          border-right: 1px #e5e5e5 solid;
+          overflow: hidden;
+          margin-left: 40px;
+          height: 100px;
+          margin-top: 32px;
+          p {
+            font-size: 22px;
+          }
+          .applyLeftMoney {
+            font-weight: bold;
+            font-size: 36px;
+            color: #3B68FE;
+            line-height: 60px;
+            span {
+              font-size: 60px;
+            }
+          }
+        }
+        .applyResultsRight {
+          font-size: 24px;
+          margin-top: 40px;
+          float: left;
+          padding-left: 48px;
+          .applyRightTitle {
+            font-size: 32px;
+            color: #333;
+            padding-bottom: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 申请进度
+.applyProgress {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #fff;
+  z-index: 99;
+  .progressDiv {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -80%);
+    text-align: center;
+    img {
+      width: 52px;
+      height: 52px;
+    }
+    p {
+      font-size: 24px;
+      color: #333;
+      padding-top: 30px;
+    }
+  }
+  .feedbackDiv {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+.feedbackProgress {
+  background: #808080;
+  z-index: 9999;
+  .feedbackDiv {
+    width: 580px;
+    height: 424px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    h3 {
+      font-size: 30px;
+      color: #333;
+      padding: 40px 0 0;
+    }
+    p {
+      color: #666;
+      font-size: 22px;
+      padding-bottom: 50px;
+      padding-top: 20px;
+    }
+    .applyProgressBtn {
+      width: 526px;
+      height: 84px;
+      text-align: center;
+      line-height: 84px;
+      margin: 0 auto 20px;
+      border-radius: 8px;
+      font-size: 28px;
+      color: #666666;
+    }
+    .applyProgressNo {
+      border: 1px solid rgba(102, 102, 102, 1);
+    }
+    .applyProgressAready {
+      background: linear-gradient(45deg, rgba(66, 142, 255, 1), rgba(63, 111, 255, 1));
+      color: #fff;
+    }
+  }
+}
+
+// 额度测评
+.assessment {
+  width: 100%;
+  .scoringAll {
+    padding-bottom: 20px;
+    margin-bottom: 12px;
+    background: #fff;
+    margin-top: 88px;
+    .scoring {
+      position: relative;
+      width: 460px;
+      height: 460px;
+      left: 145px;
+      top: 10px;
+      .scoringImg {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .scoringText {
+        padding: 84px 0 94px;
+        text-align: center;
+        p {
+          font-size: 26px;
+          color: #666;
+        }
+        h3 {
+          font-size: 90px;
+          color: #333;
+          width: 316px;
+          border-bottom: 1px #E5E5E5 solid;
+          margin: 0 auto;
+          padding-bottom: 10px;
+          margin-bottom: 40px;
+        }
+        span {
+          display: block;
+          font-size: 26px;
+          color: #157EE7;
+        }
+      }
+    }
+    .borrowMoney {
+      width: 400px;
+      height: 76px;
+      line-height: 76px;
+      background: linear-gradient(0deg, rgba(26, 141, 255, 1), rgba(68, 193, 255, 1));
+      border-radius: 38px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 30px;
+      color: #fff;
+    }
+  }
+  .loanContDivScorNotice {
+    text-align: center;
+    position: relative;
+    font-size: 30px;
+    color: #333;
+    padding: 6px 0 26px;
+    .applyListLeft,
+    .applyListRight {
+      position: absolute;
+      width: 127px;
+      height: 10px;
+      top: 24px;
+      img {
+        width: 100%;
+      }
+    }
+    .applyListLeft {
+      left: 90px;
+    }
+    .applyListRight {
+      right: 90px;
+    }
+  }
+}
+
+.cooperBot {
+  padding-bottom: 160px;
+}
+
+.assessmentData {
+  width: 100%;
+  .basicInfoDetail .accuratPhone-input {
+    font-size: 28px;
+  }
+  .assessmentDataNotice {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #FF5B5B;
+    background: #FFE3DA;
+    margin-top: 88px;
+  }
+  .assessmentBasicInfo {
+    background: #fff;
+    .assessmentBasicInfoTitle {
+      border-bottom: 1px #e5e5e5 solid;
+      padding: 0 24px;
+      height: 90px;
+      line-height: 90px;
+      color: #FF5B5B;
+      font-size: 30px;
+      .BasicInfoIcon {
+        width: 28px;
+        height: 34px;
+        margin: 28px 18px 0 0;
+      }
+      // 联系方式icon
+      .BasicInfomobielIcon {
+        width: 32px;
+        height: 24px;
+        margin: 34px 18px 0 0;
+      }
+      .BasicInfoIncomeIcon {
+        width: 32px;
+        height: 32px;
+        margin: 28px 18px 0 0;
+      }
+      // span {
+      //     float: right;
+      //     color: #999;
+      //     font-size: 24px;
+      //     font-weight: normal;
+      //     img {
+      //         width: 16px;
+      //         height: 17px;
+      //         margin: 36px 0 0 8px;
+      //     }
+      // }
+    }
+  }
+  .accuratPhone .applyMoneyRight {
+    float: right !important;
+  }
+  .applyMoneyValue {
+    color: #FF5B5B;
+    font-size: 36px;
+  }
+  .basicInfoDetail {
+    // .accuratPhone-text-left {
+    //     padding-left: 20px;
+    // }
+    strong {
+      color: #FF5B5B;
+      padding-right: 10px;
+    }
+  }
+  // .applyMoney,
+  // .loanPeriod {
+  //     display: inline-block;
+  // }
+  // .applyMoney {
+  //     width: 380px;
+  //     border-right: 1px #E5E5E5 solid;
+  //     padding-right: 20px;
+  //     input {
+  //         width: 50px;
+  //     }
+  // }
+  // .loanPeriod {
+  //     width: 290px;
+  //     input {
+  //         width: 10px;
+  //     }
+  // }
+  .incomeInfo {
+    margin-bottom: 160px;
+  }
+  .measurement {
+    width: 100%;
+    height: 98px;
+    line-height: 98px;
+    text-align: center;
+  }
+}

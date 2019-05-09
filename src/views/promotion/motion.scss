@@ -1,0 +1,192 @@
+.promotion{
+  width: 100%;
+  .promotion_ban_div, .promotion_footer_div{
+    position: relative;
+  }
+  .promotion_ban_div{
+    .promotion_ban_phone{
+      position: absolute;
+      bottom: 10px;
+      left:0;
+      right:0;
+      width: 728px;
+      height: 456px;
+      margin: 0 auto;
+      background: url(../../assets/img/promotion-phone.png) no-repeat;
+      background-size: 100%;
+      padding: 72px 0 0;
+      .promotion-login-input{
+        height: 98px;
+        line-height: 98px;
+        width: 640px;
+        margin: 0 auto 40px;
+        background: #f3f1ff;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        input{
+          color: #333;
+          font-size: 34px;
+          padding: 0 30px;
+          &::placeholder{
+            color: #a7adff;
+            font-size: 32px;
+          }
+        }
+        .login-yzm{
+          height: 64px;
+          line-height: 64px;
+          margin-top: 17px;
+          border-left: 1px #767ffd solid;
+          width: 246px;
+          color: #a7adff;
+          font-size: 26px;
+        }
+      }
+      .login-hqyzm{
+        display: flex;
+        input{
+          width: 80%;
+        }
+      }
+      .loginButton{
+        width: 656px;
+        height: 114px;
+        line-height: 106px;
+        margin: 0 auto;
+        text-align: center;
+        background: url("../../assets/img/promotion-btn.png") no-repeat;
+        background-size: 100%;
+      }
+      .el-button{
+        font-size: 36px;
+        background: none;
+        color: #ff4f30;
+        border:none;
+      }
+    }
+  }
+  .promotion_footer_div{
+    .promotion_footer_text{
+      width: 100%;
+      position: absolute;
+      bottom: 30px;
+      line-height: 40px;
+      font-size: 22px;
+      color: #fff;
+      text-align: center;
+    }
+  }
+  .promotion_ban, .promotion_footer{
+    vertical-align: top;
+    width: 100%;
+  }
+}
+
+.zhiziloan{
+  background: #fff;
+  .zhiziloan_ban_phone{
+    width: 545px;
+    margin: 0 auto;
+    padding-bottom: 16px;
+    .promotion-login-input{
+      i{
+        width: 31px;
+        height: 45px;
+        display: inline-block;
+        padding-right: 26px;
+        vertical-align: middle;
+        img{
+          width: 100%;
+        }
+      }
+      margin-top: 6px;
+      width: 100%;
+      border-bottom: 2px #e7e7e7 solid;
+      input{
+        height: 82px;
+        line-height: 82px;
+        font-size: 32px;
+        &::placeholder{
+          color: #bfbfbf;
+          font-size: 24px;
+        }
+      }
+    }
+    .login-hqyzm{
+      position: relative;
+      .login-yzm{
+        position: absolute;
+        right:0;
+        width: 174px;
+        height: 60px;
+        line-height: 60px;
+        color: #fff;
+        background: #407cf6;
+        border-radius: 30px;
+        margin-top: 10px;
+      }
+    }
+  }
+  .loginButton{
+    margin-top: 42px;
+    height: 92px;
+    line-height: 92px;
+    text-align: center;
+    background: #407cf6;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    .el-button{
+      font-size: 32px;
+      background: none;
+      color: #fff;
+      border:none;
+    }
+  }
+
+  .markDiv{
+    position: fixed;
+    background: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    top:0;
+    left:0;
+    .markDivTit{
+      padding: 30px;
+      text-align: center;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 584px;
+      background: #fff;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      img{
+        width: 65px;
+        height: 65px;
+      }
+      p{
+        font-size: 32px;
+        padding: 16px 0 28px;
+      }
+      .clickdown{
+        padding:0;
+        width: 510px;
+        height: 80px;
+        margin: 0 auto;
+        line-height: 80px;
+        font-size: 30px;
+        color: #fff;
+        background: #407cf8;
+        -webkit-border-radius: 14px;
+        -moz-border-radius: 14px;
+        border-radius: 14px;
+      }
+
+    }
+  }
+}

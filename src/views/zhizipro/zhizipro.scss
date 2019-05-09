@@ -1,0 +1,291 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.banner,
+.banner img {
+  width: 100%;
+}
+
+.step .steptxt {
+  line-height: 100px;
+  color: #666666;
+  font-size: 24px;
+  text-align: center;
+}
+
+.step .steptxt span {
+  color: #ffc30b;
+}
+
+.stepul {
+  width: 684px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.stepul li,
+.stepul span {
+  float: left;
+  text-align: center;
+}
+
+.stepul span {
+  color: #7c99e0;
+  font-size: 46px;
+  line-height: 46px;
+}
+
+.stepul li img {
+  display: block;
+  width: 44px;
+  height: 47px;
+  margin: 0 auto;
+}
+
+.stepul li span {
+  display: block;
+  color: #666666;
+  font-size: 26px;
+  padding-top: 16px;
+}
+
+@media screen and (max-width: 320px) {
+  .stepul span {
+    font-size: 36px;
+  }
+}
+
+.message p,
+.cece {
+  border-radius: 50px;
+  text-align: center;
+}
+
+.message p {
+  position: relative;
+  width: 686px;
+  height: 98px;
+  line-height: 98px;
+  border: 2px #4c89f3 solid;
+  margin: 68px auto 46px;
+}
+
+.message p i {
+  position: absolute;
+  display: block;
+  top: 31px;
+  left: 43px;
+  width: 27px;
+  height: 36px;
+  background: url(./images/phone.png) no-repeat;
+  background-size: 100%;
+}
+
+.message p input[type="tel"]::placeholder,
+.zhezhaopp input::placeholder {
+  font-size: 24px;
+  color: #999999;
+}
+
+.message p input[type="tel"] {
+  position: absolute;
+  left: 96px;
+  top: 19px;
+  font-size: 30px;
+  width: 86%;
+  height: 60px;
+  line-height: 60px;
+  color: #333;
+}
+
+.cece {
+  width: 690px;
+  height: 102px;
+  line-height: 102px;
+  background: #407cf6;
+  color: #fff;
+  font-size: 38px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+
+/*    获取验证码    */
+
+.mask, .maskkkkk {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+.maskkkkk{
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+
+.zhezhaoone,
+.zhezhaotwo,
+.zhezhaothree {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 680px;
+  height: 460px;
+  background: #fff;
+  border-radius: 20px;
+  z-index: 3;
+  text-align: center;
+}
+
+.block {
+  display: block !important;
+}
+
+.zhezhaopp {
+  position: relative;
+  width: 586px;
+  height: 94px;
+  line-height: 94px;
+  border: 2px #407cf6 solid;
+  margin: 99px auto 66px;
+  border-radius: 60px;
+}
+
+.zhezhaopp input {
+  position: absolute;
+  top: 16px;
+  left: 40px;
+  width: 340px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 30px;
+  color: #333;
+}
+
+.zhezhaopp button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 194px;
+  height: 78px;
+  line-height: 78px;
+  text-align: center;
+  border-radius: 40px;
+  background: #6c9af7;
+  color: #fff;
+  font-size: 30px;
+}
+
+.zhezhaoh3,
+.downloadapp {
+  width: 590px;
+  height: 98px;
+  line-height: 98px;
+  margin: 0 auto;
+  font-size: 36px;
+  text-align: center;
+  background: #407cf6;
+  color: #fff;
+  border-radius: 60px;
+}
+
+.downloadapp a{
+  display: block;
+  color: #fff;
+}
+
+.zhezhaotwo img {
+  display: block;
+  width: 128px;
+  height: 128px;
+  margin: 20px auto;
+}
+
+.congra {
+  color: #333333;
+  font-size: 44px;
+}
+
+.zhezhaotwo p {
+  color: #333;
+  font-size: 26px;
+  margin: 32px 0 26px;
+}
+
+.aready {
+  font-size: 46px;
+  margin: 46px 0 40px;
+}
+
+.nowdown {
+  width: 446px;
+  margin: 0 auto 40px;
+  text-align: left;
+  font-size: 34px;
+  color: #666;
+  line-height: 60px;
+}
+
+.nowdown span {
+  color: #e74f46;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 34px;
+  font-size: 50px;
+  border: 2px #666 solid;
+  border-radius: 50%;
+  background: #fff;
+  color: #666;
+  transform: rotate(45deg);
+}
+
+.footer, .notice{
+  width: 90%;
+  padding: 20px 5%;
+  color: #999;
+  font-size: 24px;
+  text-align: center;
+  line-height: 36px;
+}
+
+.notice a{
+  color: #407cf6;
+}
+
+.footer{
+  background: #f6f6f6;
+  margin-top: 100px;
+  color: #999;
+}
+
+.wechatcenter{
+  position: fixed;
+  top:60px;
+  z-index: 999;
+  left:0;
+  right:1rem;
+  width: 100%;
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+.wechatcenter img{
+  width: 50%;
+  float: right;
+  margin-right: 60rem;
+}

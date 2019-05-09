@@ -1,0 +1,172 @@
+// 统一头
+.loanTopTitle {
+    width: 100%;
+    position: fixed;
+    min-width: 320px;
+    max-width: 750px;
+    top: 0;
+    left: 0;
+    right:0;
+    margin: 0 auto;
+    z-index: 999;
+    height: 88px;
+    line-height: 88px;
+    text-align: center;
+    color: #fff;
+    font-size: 34px;
+    background: url(../assets/changeImg/nav-top-icon-bg.png) no-repeat;
+    background-size: 100%;
+    span {
+        position: absolute;
+        right: 24px;
+        line-height: 28px;
+        font-size: 28px;
+        top: 34px;
+        background: url(../assets/img/jing-zhun-tuijian-icon.png) no-repeat left 2px;
+        background-size: 20%;
+        padding-left: 40px;
+    }
+    .loanTopTitleLeft {
+        position: absolute;
+        left: 0;
+        top: 24px;
+        width: 36px;
+        height: 36px;
+        text-align: center;
+        background: none;
+        img {
+            width: 20px;
+            height: 36px;
+        }
+    }
+}
+
+.containLogin {
+    background: #fff;
+    position: fixed;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    .bindNotice {
+        padding: 40px 0 10px;
+        width: 690px;
+        margin: 0 auto;
+        line-height: 50px;
+        font-size: 26px;
+        color: #333;
+    }
+    .login-margin {
+        padding-top: 132px;
+    }
+    .login-input {
+        width: 690px;
+        margin: 0 auto;
+        input {
+            width: 100%;
+            height: 80px;
+            line-height: 80px;
+            border: 0;
+            margin: 0 auto;
+            border-bottom: 1px #E3E3E3 solid;
+            font-size: 34px;
+            color: #333;
+            padding-top: 46px;
+            &::-webkit-input-placeholder {
+                /* Chrome/Opera/Safari */
+                color: #CCCCCC;
+                font-size: 26px;
+            }
+            &::-moz-placeholder {
+                /* Firefox 19+ */
+                color: #CCCCCC;
+                font-size: 26px;
+            }
+            &::-ms-input-placeholder {
+                /* IE 10+ */
+                color: #CCCCCC;
+                font-size: 26px;
+            }
+        }
+    }
+    .login-hqyzm {
+        position: relative;
+        .login-yzm {
+            width: 160px;
+            height: 50px;
+            border: 1px solid $font-color;
+            border-radius: 4px;
+            position: absolute;
+            bottom: 15px;
+            right: 0;
+            color: $font-color;
+            font-size: 24px;
+        }
+    }
+}
+
+.loginButton {
+    width: 690px;
+    margin: 100px auto 20px;
+    .el-button {
+        width: 100%;
+        height: 90px;
+        text-align: center;
+        background: url(../assets/changeImg/apply_button.png) no-repeat;
+        background-size: 100%;
+        font-size: 36px;
+        color: #fff;
+    }
+}
+
+.loginServer {
+    width: 690px;
+    margin: 0 auto;
+    color: #999999;
+    font-size: 26px;
+    span {
+        color: $font-color;
+    }
+}
+
+.thrLogin {
+    text-align: center;
+    padding-top: 230px;
+    p {
+        font-size: 24px;
+        color: #333;
+    }
+    ul {
+        display: flex;
+        width: 60%;
+        margin: 60px auto 0;
+        position: relative;
+        #qqLoginBtn {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            a {
+                display: block;
+                height: 100%;
+            }
+        }
+        li {
+            width: 100%;
+            img {
+                width: 60px;
+                height: 60px;
+            }
+            span {
+                display: block;
+                font-size: 26px;
+                padding-top: 20px;
+                color: #666;
+            }
+        }
+    }
+}
